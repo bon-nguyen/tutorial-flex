@@ -1,0 +1,149 @@
+html {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  input,
+  textarea,
+  select,
+  button {
+    outline: none;
+  }
+  input {
+    line-height: normal;
+  }
+  label,
+  button {
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  body {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+  }
+.card{
+    &-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        --spacing: 30px;
+        --column: 4;
+        
+    }
+    &-item{
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: rgba(100, 100, 111, .2) 0px 7px 29px 0px;
+        width: calc(25% - 30px);
+        margin-left: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    &-image{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+    &-content{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    &-top{
+        padding: 25px;
+        border-bottom: 1px solid #999;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        
+    }
+    &-title{
+        font-weight: 500;
+        margin-bottom: 25px;
+        flex-shrink: 0;
+    }
+    &-user{
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+        &__avatar{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: fill;
+            object-fit: cover;
+        }
+
+        &__info{
+            padding-left: 20px;
+            flex: 1;
+
+            
+
+            &-top{
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+
+                > ion-icon.md.hydrated{
+                    color: #20e3b2;
+                    margin-left: 5px;
+                }
+            }
+            
+            &-bottom{
+                font-size: 12px;
+            }
+            &-name{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 1;
+            }
+
+        }
+
+
+    }
+    &-footer{
+        display: flex;
+        padding: 20px;
+        border-top: 1px solid #fff;
+        justify-content: space-between;
+        align-items: center;
+        &__live{
+            display: flex;
+            color: #fff;
+            align-items: center;
+            padding: 5px 10px;
+            border-radius: 6px;
+            background-color: #ff6651;
+
+            span{
+                margin-left: 5px;
+            }
+        }
+
+        &__watching{
+            font-size: 13px;
+            font-weight: 300;
+            color: #999;
+        }
+    }
+}
+
