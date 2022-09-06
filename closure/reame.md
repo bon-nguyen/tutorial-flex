@@ -1,0 +1,24 @@
+>> UseEffect
+
+// Initiation document
+
++ Events add , remove event listener
++ Observer pattern
++ Closure 
+
+
+
+
+# Closure
+Là một hàm có thể ghi nhớ nơi nó được tạo và truy cập được biến ở bên ngoài phạm vi của nó
+
+# Closure -> Ứng dụng 
+- viết code ngắn gọn hơn
+- Biểu diễn, ứng dụng tính Private trong OOP
+
+# Closure Tóm tắt
+
+# Closure - lưu ý
+- Biến được tham chiếu (refer) trong closure sẽ không được khóa khỏi bộ nhớ khi hàm cha thực thi xong
+- Các khái niệm Javascript nâng cao rất dễ gây nhầm lẫn
+`

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-group{
+            display: flex;
+            column-gap: 30px;
+            background-color: lightblue;
+        }
+        .item{
+            position: relative;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+
+
+
+          
+        }
+        .item-thumbnail{
+            background-color: aqua;
+            flex: 1;
+
+        }
+
+
+
+        .item-header{
+            background-color: blue;
+            flex: 1;
+
+        }
+        .item-footer{
+            background-color:brown;
+            margin-top: auto;
+            flex: 1;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <div class="flex-group">
+        <div class="item">
+            <div class="item-thumbnail">Lorem ipsum dolor sit, amet ea consequatur consequuntur possimus sint nostrum fuga, commodi voluptatum animi eos. t. Impedit accusamus excepturi quos error, itaque laudantium laboru t. Impedit accusamus excepturi quos error, itaque laudantium laboru</div>
+
+                <div class="item-header">
+                        Lorem, ipsum dolor sit amet consectetur adtque fugiat dolorem. Dolorem fugiat enim odio deleniti consequuntur.
+                </div>
+                <div class="item-footer">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. ipisicing elit. Impedit accusamus excepturi quos error, itaque laudantium laborum vero quaerat eius commodi nam a itaque laudantium laborum vero quaerat eius commodi nam a
+                </div>
+
+        </div>
+        <div class="item">
+            <div class="item-thumbnail">Lorem ipsum dolor sit, amet ea consequatur consequuntur possimus sint nostrum fuga, commodi voluptatum animi eos.</div>
+
+                <div class="item-header">
+                        Lorem, ipsum dolor sit amet consectetur adtque fugiat dolorem. Dolorem fugiat enim odio deleniti consequuntur. sit amet consectetur adtque fugiat dolorem. Dolo sit amet consectetur adtque fugiat dolorem. Dolo sit amet consectetur adtque fugiat dolorem. Dolo
+                </div>
+                <div class="item-footer">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. ipisicing elit. Impedit accusamus excepturi quos error, itaque laudantium laborum vero quaerat eius commodi nam a itaque laudantium laborum vero quaerat eius commodi nam a
+                </div>
+
+        </div>
+        <div class="item">
+            <div class="item-thumbnail">Lorem ipsum dolor sit, amet ea consequatur consequuntur possimus sint nostrum fuga, commodi voluptatum animi eos.</div>
+
+                <div class="item-header">
+                        Lorem, ipsum dolor sit amet consectetur adtque fugiat dolorem. orem. Dolorem fugiat enim odio deleniti consequunDolorem fugiat enim odio deleniti consequuntur.
+                </div>
+                <div class="item-footer">
+                    Lorem ipsum dolor sit, amet erat eius commodi nam a itaque laudantium laborum vero quaerat eius commodi nam a
+                </div>
+
+        </div>
+
+    </div>
+    <script>
+        let clientHeight = document.querySelector('.item').clientHeight;
+        console.log("item", clientHeight);
+        document.querySelector(".item").style.height = `${clientHeight}px`;
+    </script>
+</body>
+</html>
