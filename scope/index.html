@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+
+      const fs = require("fs");
+
+      process.stdin.resume();
+      process.stdin.setEncoding("utf-8");
+
+      let inputString = "";
+      let currentLine = 0;
+
+      process.stdin.on("data", function (inputStdin) {
+        inputString += inputStdin;
+      });
+
+      process.stdin.on("end", function () {
+        inputString = inputString.split("\n");
+
+        main();
+      });
+
+      function readLine() {
+        return inputString[currentLine++];
+      }
+
+      /*
+       * Complete the 'aVeryBigSum' function below.
+       *
+       * The function is expected to return a LONG_INTEGER.
+       * The function accepts LONG_INTEGER_ARRAY ar as parameter.
+       */
+
+      function aVeryBigSum(ar) {
+        // Write your code here
+        let result = 0;
+        for (let i = 1; i <= ar; i++) {
+          result += Math.pow(10, 9) + i;
+        }
+        return result;
+      }
+
+      function main() {
+        // const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
+
+        const arCount = parseInt(readLine().trim(), 10);
+
+        const ar = readLine()
+          .replace(/\s+$/g, "")
+          .split(" ")
+          .map((arTemp) => parseInt(arTemp, 10));
+
+        const result = aVeryBigSum(ar);
+
+        // ws.write(result + "\n");
+
+        // ws.end();
+      }
+    </script>
+  </body>
+</html>

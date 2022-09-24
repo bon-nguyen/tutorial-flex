@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        font-size: 40px;
+        width: 100%;
+        min-height: 100vh;
+      }
+      [class^="box-"] {
+        background-color: skyblue;
+
+        /* To place the letter at the center */
+        display: grid;
+        place-items: center;
+            grid-column-start : 1;
+    grid-column-end : 2;
+
+/* The shorthand -> */
+ grid-column : 1 / 2
+      }
+      .container {
+  display: grid;
+  gap: 50px;
+  height: 100vh;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+ 
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-1">A</div>
+      <div class="box-2">B</div>
+      <div class="box-3">C</div>
+      <div class="box-4">D</div>
+    </div>
+  </body>
+</html>

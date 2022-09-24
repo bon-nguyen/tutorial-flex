@@ -22,3 +22,7 @@ Là một hàm có thể ghi nhớ nơi nó được tạo và truy cập đư�
 - Biến được tham chiếu (refer) trong closure sẽ không được khóa khỏi bộ nhớ khi hàm cha thực thi xong
 - Các khái niệm Javascript nâng cao rất dễ gây nhầm lẫn
 `
+
+
+>> Lần sau tiếp tục closure scope chain
+
