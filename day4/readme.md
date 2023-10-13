@@ -1,12 +1,10 @@
->> Conditional
-- ways
-+ If
-+ If else
-+ if else if else
-+ switch
-+ ternary operator
+> > Conditional can be implementing using the flow ways
 
-
+- If
+- If else
+- if else if else
+- switch
+- ternary operator
 
 `If`
 execute the block code {}
@@ -20,4 +18,3 @@ if(condition){}
 `Switch`
 
 `Ternary operator`
-

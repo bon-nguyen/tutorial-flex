@@ -29,7 +29,7 @@ console.log(firstName) //not defined, because it is not assigned to a value yet
 
 > > Null
 > > let empty = null
-> > console.log(empty) // -> null , means no value
+> > means no value
 
 > > Operators
 
