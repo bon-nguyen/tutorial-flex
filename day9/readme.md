@@ -14,3 +14,13 @@
 > > clearTimeout (fn, ms)
 
 > > Functional programming
+
+- Foreach
+- map
+- filter
+- reducer
+- every
+- find
+- findIndex
+- some
+- sort
