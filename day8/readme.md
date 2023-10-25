@@ -1,3 +1,11 @@
+> > Scope
+
+    + Window Global Object
+    + Global scope
+    + Local scope
+
+To declare a variable using, var let and const
+
 > > Object
 > > An object is a key value pair
 
