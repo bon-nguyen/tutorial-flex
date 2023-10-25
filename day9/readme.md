@@ -12,3 +12,5 @@
 > > setTimeout
 
 > > clearTimeout (fn, ms)
+
+> > Functional programming
